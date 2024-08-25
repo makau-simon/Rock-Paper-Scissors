@@ -1,0 +1,116 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background:radial-gradient(#0C0F2D,#222);
+}
+
+/* Title of the game */
+.title {
+  color: #ccc;
+  font-weight: 900;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+/* div showing the players */
+.status_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  background: rgba(255, 255, 255, .05);
+}
+
+.card p {
+  margin: 0;
+  color: #ccc;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.play_board {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.play_board .card_hands {
+  height: 150px;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The div with control buttons */
+.controls {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, .05);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Individual button inside the .controls div*/
+.controls button {
+  border: 0;
+  background: none;
+  outline: none;
+  font-size: 50px;
+  cursor: pointer;
+  transition: background 1s;
+}
+.controls button:active{
+  background: #21294A;
+}
+
+.status_text {
+  text-align: center;
+  font-size: 30px;
+  color: #ccc;
+}
+
+/* adding a class with animation */
+.animate {
+  animation: rotate .8s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(.5)
+  }
+
+  50% {
+    transform: scale(1)
+  }
+
+  100% {
+    transform: scale(.5)
+  }
+}
+.no-clicking{
+  pointer-events: none;
+}
+
+/* ---written by simon Makau--- */
